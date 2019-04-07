@@ -111,6 +111,7 @@ nav h1 a {
   align-items: center;
   width:100%;
   height:100%;
+  padding: 8px 0;
 }
 .filter-options h2 {
   color: white;
@@ -129,7 +130,6 @@ nav h1 a {
   margin: 10px;
   padding: 0 10px;
   width: 200px;
-  padding: 8px 0;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -189,6 +189,14 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+
+#grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+
 .inside header {
   position: fixed;
   top: 0;
@@ -242,6 +250,11 @@ nav h1 a {
   text-transform: uppercase;
 	width: 90%;
 }
+
+#map-container {
+
+}
+
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
