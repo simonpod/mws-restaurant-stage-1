@@ -267,8 +267,6 @@ grid-row-start: 1;
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
   padding: 30px 40px 30px;
-  width: 100%;
-
 }
 #reviews-container {
   padding: 30px 40px;
@@ -283,8 +281,10 @@ grid-row-start: 1;
 
 }
 #reviews-list {
-  margin: 0;
+  margin:0;
+
   padding: 0;
+
 }
 #reviews-list li {
   background-color: #fff;
@@ -293,7 +293,7 @@ grid-row-start: 1;
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
+  padding: 20px 20px 20px;
   position: relative;
   width: 85%;
 }
