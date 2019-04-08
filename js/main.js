@@ -157,6 +157,9 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
  */
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
+   li.setAttribute('aria-label', ` ${restaurant.name}  restaurant section`);
+   li.setAttribute('tabindex', 0 );
+
 
   const image = document.createElement('img');
   image.className = 'restaurant-img';
@@ -179,6 +182,9 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   more.href = DBHelper.urlForRestaurant(restaurant);
+  more.setAttribute('aria-label', ` ${restaurant.name} restaurant details button`);
+  //part of new Aria specification
+  more.setAttribute('role', 'button');
   li.append(more)
 
   return li
@@ -196,6 +202,8 @@ addMarkersToMap = (restaurants = self.restaurants) => {
       window.location.href = marker.options.url;
     }
     self.markers.push(marker);
+
+
   });
 
 }
